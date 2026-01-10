@@ -14,6 +14,10 @@
     })
     newTodo.value = ''
   }
+
+  function deleteTodo(id){ //function hapus todo berdasar id
+    todos.value = todos.value.filter(todo => todo.id !== id) 
+  }
 </script>
 
 <template>
@@ -34,6 +38,7 @@
         <span :class="{done: todo.done}">
          {{ todo.text }}
         </span>
+        <button @click="deleteTodo(todo.id)">Delete</button>
       </li>
     </ul>
   </div>
@@ -41,6 +46,7 @@
 
 <style scoped>
   .container{
+    background-color : blue;
     max-width : 400px;
     margin : 50px auto;
   }
