@@ -41,8 +41,11 @@
 
 <template>
   <div class="text-center p-5 m-10 border-2 border-blue-500 rounded-lg">
+    
+    <!-- Judul Halaman -->
     <h1 class="text-4xl font-bold text-blue-500 mb-5">TODO LIST</h1>
 
+    <!-- Form Input Todo untuk bisa menggunakan tombol enter ketika selesai input-->
     <form class="mb-3 bg-blue-200 flex  rounded-lg" @submit.prevent="addTodo">
       <input
       class="w-full h-10 flex px-5" 
@@ -52,6 +55,8 @@
       />
       <button class="px-3 py-2 bg-indigo-400" @click="addTodo">Tambah</button>
     </form>
+
+    <!-- jarak antar kotak todo -->
     <ul class="p-1 space-y-2">
       <li 
         v-for="todo in todos" 
