@@ -10,5 +10,9 @@ saya harap proyek ini akan terus berkembang terus :>
    ```sh
    git clone https://github.com/Devjack404/SImple-Todo-List-.git
    ```
-2.
+2.```sh
+   cd SImple-Todo-List-
+  ```
+
+
 
