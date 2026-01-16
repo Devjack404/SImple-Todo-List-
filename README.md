@@ -43,10 +43,11 @@ SImple-Todo-List-
 
 ## FITUR UTAMA
 
-- Menambahkan Tugas 1
-- Menghapus Tugas 2
-- Mengedit Tugas 3
+1. Menambahkan Tugas
+2. Menghapus Tugas 
+3. Mengedit Tugas 
 
 ## PESAN
 Mungkin ini menjadi proyek sampingan saya dalam mempelajari Web yang dinamis, dan jika ditanya kenapa saya menggunakan Nuxt Js karena 
 saya ingin mempelajar bagaiamana menggunakan Fream Work untuk Vue Js, dan meski memiliki banyak kekurangan saya akan mencoba memperbaikinya terus...
+
