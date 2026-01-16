@@ -2,7 +2,7 @@
 ## PROYEK TODO LIST MENGGUNAKAN VUE.JS DAN NUXT
 
 ## Apa ini ?
-Ini adalah proyek website saya menggunakan Vue.js dan Nuxt.js. Saya mencoba membuat TODO LIST yang memiliki desain yang sanga simple menggunakan Tailwind
+Ini adalah proyek website saya menggunakan **Vue.js dan Nuxt.js.** Saya mencoba membuat TODO LIST yang memiliki desain yang sanga simple menggunakan **Tailwind**
 saya harap proyek ini akan terus berkembang terus :>
 
 ## Cara Menjalankan ?
@@ -23,22 +23,29 @@ localhost yang tersedia yaitu di port (3000) :
    ```sh
    npm run dev
    ```
+5. Akses website melalui browser di:
+   ```sh
+    http://localhost:3000
+   ```
 
 ## STRUKTUR FILE
 
 SImple-Todo-List-
-   |---Nuxt
-   |---app
-         |---assets
-         |---components
-         |-app.vue (Tampilan UI & Logic)
-   |---node_modules
-   |---public
-   |-nuxt.config.ts
-   |-package-lock.json
-   |-package.json
-   |-READ.md
-   |-tsconfig.json
+│
+├── Nuxt
+├── app
+│   ├── assets
+│   ├── components
+│   └── app.vue        # Tampilan UI & Logic utama
+│
+├── node_modules
+├── public
+├── nuxt.config.ts
+├── package.json
+├── package-lock.json
+├── tsconfig.json
+└── README.md
+
    
 
 ## FITUR UTAMA
@@ -55,5 +62,6 @@ SImple-Todo-List-
 ## PESAN
 Mungkin ini menjadi proyek sampingan saya dalam mempelajari Web yang dinamis, dan jika ditanya kenapa saya menggunakan Nuxt Js karena 
 saya ingin mempelajar bagaiamana menggunakan Fream Work untuk Vue Js, dan meski memiliki banyak kekurangan saya akan mencoba memperbaikinya terus...
+
 
 
