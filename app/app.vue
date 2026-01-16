@@ -41,7 +41,7 @@
 
 <template>
   <div class="text-center p-5 m-10 border-2 border-blue-500 rounded-lg">
-    <h1 class="text-2xl">TODO LIST</h1>
+    <h1 class="text-4xl font-bold text-blue-500 mb-5">TODO LIST</h1>
 
     <form class="mb-3 bg-blue-200 flex  rounded-lg" @submit.prevent="addTodo">
       <input
@@ -52,12 +52,12 @@
       />
       <button class="px-3 py-2 bg-indigo-400" @click="addTodo">Tambah</button>
     </form>
-    <ul class="w-full space-y-2">
+    <ul class="p-1 space-y-2">
       <li 
         v-for="todo in todos" 
         :key="todo.id"
-        class="flex items-center space-x-2"
-     >
+        class="flex items-center gap-3 bg-blue-100 rounded-lg p-2 space-x-2"
+      >
         <!-- Kotak Checkbox -->
         <div>
           <input class="flex items-center w-5 h-5" type="checkbox" v-model="todo.done" />
