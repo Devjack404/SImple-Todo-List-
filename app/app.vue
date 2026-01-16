@@ -40,25 +40,45 @@
 </script>
 
 <template>
-  <div class="text-center p-5">
-    <h1 class="text-2xl">Todo List</h1>
+  <div class="text-center p-5 m-10 border-2 border-blue-500 rounded-lg">
+    <h1 class="text-2xl">TODO LIST</h1>
 
-    <div class="mb-3 bg-blue-200">
-      <input 
+    <form class="mb-3 bg-blue-200 flex  rounded-lg" @submit.prevent="addTodo">
+      <input
+      class="w-full h-10 flex px-5" 
       v-model="newTodo"
       type="text"
       placeholder="Masukan Tugas..."
       />
-      <button @click="addTodo">Tambah</button>
-    </div>
-    <ul class="todo-list">
-      <li v-for="todo in todos" :key="todo.id">
-        <input type="checkbox" v-model="todo.done" />
-        <span :class="{done: todo.done}">
+      <button class="px-3 py-2 bg-indigo-400" @click="addTodo">Tambah</button>
+    </form>
+    <ul class="w-full space-y-2">
+      <li 
+        v-for="todo in todos" 
+        :key="todo.id"
+        class="flex items-center space-x-2"
+     >
+        <!-- Kotak Checkbox -->
+        <div>
+          <input class="flex items-center w-5 h-5" type="checkbox" v-model="todo.done" />
+        </div>
+        
+          <!-- desain tulisan todo -->
+        <span 
+          :class="[
+            'flex-1 text-left transition-all duration-300 text-lg',
+            todo.done
+              ? 'line-through text-gray-500'
+              : 'no-underline text-black'
+
+          ]"
+        >
          {{ todo.text }}
         </span>
-        <button class="mx-20" @click="deleteTodo(todo.id)">Delete</button>
-        <button @click="editTask(todo.id)">Edit</button>
+
+        <!-- Tombol Hapus dan Edit -->
+        <button class="px-3 py-1 bg-red-500 text-white rounded-lg" @click="deleteTodo(todo.id)">Del</button>
+        <button class="px-3 py-1 bg-blue-500 text-white rounded-lg" @click="editTask(todo.id)">Edit</button>
       </li>
     </ul>
   </div>
