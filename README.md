@@ -6,6 +6,9 @@ Ini adalah proyek website saya menggunakan Vue.js dan Nuxt.js. Saya mencoba memb
 saya harap proyek ini akan terus berkembang terus :>
 
 ## Cara Menjalankan ?
-1. Bisa menggunaka code berikut :
-   ``` git clone https://github.com/Devjack404/SImple-Todo-List-.git ```
+1. Bisa menggunakan code berikut :
+   ```sh
+   git clone https://github.com/Devjack404/SImple-Todo-List-.git
+   ```
 2.
+
