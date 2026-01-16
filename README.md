@@ -47,7 +47,13 @@ SImple-Todo-List-
 2. Menghapus Tugas 
 3. Mengedit Tugas 
 
+## TECH STACK
+- Vue.js
+- Nuxt.js
+- Tailwind
+  
 ## PESAN
 Mungkin ini menjadi proyek sampingan saya dalam mempelajari Web yang dinamis, dan jika ditanya kenapa saya menggunakan Nuxt Js karena 
 saya ingin mempelajar bagaiamana menggunakan Fream Work untuk Vue Js, dan meski memiliki banyak kekurangan saya akan mencoba memperbaikinya terus...
+
 
