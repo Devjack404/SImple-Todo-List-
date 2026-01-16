@@ -10,9 +10,20 @@ saya harap proyek ini akan terus berkembang terus :>
    ```sh
    git clone https://github.com/Devjack404/SImple-Todo-List-.git
    ```
-2.```sh
+2. Masuk Folder :
+   ```sh
    cd SImple-Todo-List-
-  ```
+   ```
+3. Buka Code Editor (VS CODE)
+   ```sh
+   code .
+   ```
+4. Jalankan Websitenya dan masuk ke
+localhost yang tersedia yaitu di port (3000) :
+   ```sh
+   npm run dev
+   ```
+
 
 
 
