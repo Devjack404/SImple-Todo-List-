@@ -24,6 +24,29 @@ localhost yang tersedia yaitu di port (3000) :
    npm run dev
    ```
 
+## STRUKTUR FILE
 
+SImple-Todo-List-
+   |---Nuxt
+   |---app
+         |---assets
+         |---components
+         |-app.vue (Tampilan UI & Logic)
+   |---node_modules
+   |---public
+   |-nuxt.config.ts
+   |-package-lock.json
+   |-package.json
+   |-READ.md
+   |-tsconfig.json
+   
 
+## FITUR UTAMA
 
+- Menambahkan Tugas 1
+- Menghapus Tugas 2
+- Mengedit Tugas 3
+
+## PESAN
+Mungkin ini menjadi proyek sampingan saya dalam mempelajari Web yang dinamis, dan jika ditanya kenapa saya menggunakan Nuxt Js karena 
+saya ingin mempelajar bagaiamana menggunakan Fream Work untuk Vue Js, dan meski memiliki banyak kekurangan saya akan mencoba memperbaikinya terus...
