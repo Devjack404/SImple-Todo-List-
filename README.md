@@ -29,7 +29,7 @@ localhost yang tersedia yaitu di port (3000) :
    ```
 
 ## STRUKTUR FILE
-```sh
+```
 SImple-Todo-List-
 │
 ├── Nuxt
@@ -62,6 +62,7 @@ SImple-Todo-List-
 ## PESAN
 Mungkin ini menjadi proyek sampingan saya dalam mempelajari Web yang dinamis, dan jika ditanya kenapa saya menggunakan Nuxt Js karena 
 saya ingin mempelajar bagaiamana menggunakan Fream Work untuk Vue Js, dan meski memiliki banyak kekurangan saya akan mencoba memperbaikinya terus...
+
 
 
 
