@@ -4,13 +4,27 @@
   const newTodo = ref('')// menyimpan teks input
   const todos = ref([])// Menyimpan daftar todo
 
+  //ambil data dari daftar todos dan menyimpan ke var savedTodos
+  onMounted(() => {
+    const savedTodos = localStorage.getItem ('todos') 
+    if(savedTodos){
+      todos.value = JSON.parse(savedTodos)
+    } 
+  })
+
+  //simpan data setiap berubah
+  watch(todos, (newTodos) => {
+    localStorage.setItem('todos', JSON.stringify(newTodos))
+  },{ deep : true })
+
+
   //===============ADD TASK FUNCT===============
 
   function addTodo(){
     if(newTodo.value.trim() === '')//manambah nilai ke newTodo dan menghapus spasi
     return 
     todos.value.push({
-      id: Date.now(),
+      id: Date.now(), //membuat id berdasarkan waktu saat ini
       text: newTodo.value,
       done: false
     })
