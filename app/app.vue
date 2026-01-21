@@ -4,6 +4,17 @@
   const newTodo = ref('')// menyimpan teks input
   const todos = ref([])// Menyimpan daftar todo
 
+  // Menyimpan data tugas yang terselesaikan berapa
+  const totalTodos = computed(() => {
+    return todos.value.length
+  }) 
+ 
+  //
+  const doneTodos = computed(() => {
+    const completed = todos.value.filter(todo => todo.done)
+    return completed.length
+  })
+
   //ambil data dari daftar todos dan menyimpan ke var savedTodos
   onMounted(() => {
     const savedTodos = localStorage.getItem ('todos') 
@@ -28,7 +39,7 @@
       text: newTodo.value,
       done: false
     })
-    newTodo.value = ''
+    newTodo.value = '';
   }
 
   //==============DELETE FUNC=======================
@@ -99,6 +110,9 @@
         <button class="px-3 py-1 bg-red-500 text-white rounded-lg" @click="deleteTodo(todo.id)">Del</button>
         <button class="px-3 py-1 bg-blue-500 text-white rounded-lg" @click="editTask(todo.id)">Edit</button>
       </li>
+
+      <!-- Progres tugas yang terselesaikan -->
+      <p class="bg-sky-200">Progress Done : {{ doneTodos }} / {{ totalTodos }}</p>
     </ul>
   </div>
 </template>
